@@ -1,3 +1,7 @@
+# Disclaimer
+
+I really am just doing this for personal use, but may eventually try and form something coherent out of it. Below is the original README
+
 # Wal Theme
 
 This extensions for Visual Studio Code adds a **real time updated theme** that is dynamically generated from the color palette provided by [pywal](https://github.com/dylanaraps/pywal).
