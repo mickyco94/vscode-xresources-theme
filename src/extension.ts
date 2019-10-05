@@ -4,6 +4,7 @@ import * as path from 'path';
 import * as os from 'os';
 import * as Color from 'color';
 import template from './template';
+import { execSync } from 'child_process';
 
 const walColorsPath = path.join(os.homedir(), '/.cache/wal/colors');
 let autoUpdateWatcher: fs.FSWatcher | null = null;
@@ -53,12 +54,18 @@ export function deactivate() {
  */
 function generateColorThemes() {
 	// Import colors from pywal cache
-	let colors: Color[];
+	let colors: Color[] = new Array(16);
 	try {
-		colors = fs.readFileSync(walColorsPath)
-										 .toString()
-										 .split(/\s+/, 16)
-										 .map(hex => Color(hex));
+		for (let i = 0; i < colors.length; i++) {
+			let resources: string = execSync("xrdb -query -all | grep 'color" + i.toString() + ":'").toString();
+			let matches = resources.match(/#[a-f\d]{6}/gi);
+			if (matches !== null) {
+				colors[i] = Color(matches[0]);
+				console.log(colors[i]);
+			} else {
+				throw Error;
+			}
+		}
 	} catch(error) {
 		vscode.window.showErrorMessage('Couldn\'t load colors from pywal cache, be sure to run pywal before updating.');
 		return;
@@ -93,7 +100,9 @@ function autoUpdate(): fs.FSWatcher {
 			}, 100);
 	
 			// Update the theme
+			console.log("Generating themes");
 			generateColorThemes();
+			vscode.commands.executeCommand("workbench.action.reloadWindow");
 		}
 	});
 }
