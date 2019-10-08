@@ -18,27 +18,23 @@ This extensions for Visual Studio Code adds a **real time updated theme** that i
 
 - Real time updates of the color scheme
 - Two variants available: borderless and bordered
-- Works out of the box: no setup needed, just run pywal as you normally would
+- Works out of the box: no setup needed
 
 ## Requirements
 
-In order to use this extension pywal is needed, it should be run before updating the theme provided by this extension.
+In order to use this extension xrdb is needed, if your Xresources file is configured correctly it should be working, check with `xrdb -query -all`
 
 ## Extension Commands
 
 This extension contributes the following command:
 
-- `walTheme.update`: execute a manual update of the theme
+- `xresourcesTheme.update`: execute a manual update of the theme
 
 ## Extension Settings
 
 This extension contributes the following setting:
 
-- `walTheme.autoUpdate`: enable/disable the auto update of the theme provided by this extension
-
-## Release Notes
-
-The release notes can be find in the [changelog](https://github.com/dlasagno/vscode-wal-theme/blob/master/CHANGELOG.md).
+- `xresourcesTheme.autoUpdate`: enable/disable the auto update of the theme provided by this extension
 
 ## Troubleshooting
 

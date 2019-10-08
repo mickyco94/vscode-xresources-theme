@@ -1,8 +1,8 @@
 {
-	"name": "wal-theme",
-	"displayName": "Wal Theme",
-	"description": "A theme generated with pywal color palette",
-	"publisher": "dlasagno",
+	"name": "xresources-theme",
+	"displayName": "Xresources Theme",
+	"description": "A theme generated with Xresources color palette",
+	"publisher": "JackVandergriff",
 	"author": "Daniele Lasagno, Jack Vandergriff",
 	"license": "MIT",
 	"version": "1.0.2",
@@ -22,44 +22,48 @@
 	],
 	"keywords": [
 		"theme",
-		"xresources",
-		"wal"
+		"xresources"
 	],
 	"icon": "icon.png",
 	"activationEvents": [
 		"*",
-		"onCommand:walTheme.update"
+		"onCommand:xresourcesTheme.update"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "walTheme.update",
+				"command": "xresourcesTheme.update",
 				"title": "Update",
-				"category": "Wal Theme"
+				"category": "Xresources Theme"
 			}
 		],
 		"configuration": {
-			"title": "Wal Theme",
+			"title": "Xresources Theme",
 			"properties": {
-				"walTheme.autoUpdate": {
+				"xresourcesTheme.autoUpdate": {
 					"type": "boolean",
 					"default": true,
-					"description": "Update automatically the theme when the pywal color palette changes"
+					"description": "Update automatically the theme when the Xresources color palette changes"
+				},
+				"xresourcesTheme.xresourcesPath": {
+					"type": "string",
+					"default": "~/.Xresources",
+					"description": "Path to xresources file"
 				}
 			}
 		},
 		"themes": [
 			{
-				"label": "Wal",
+				"label": "Xresources",
 				"uiTheme": "vs-dark",
-				"path": "./themes/wal.json",
+				"path": "./themes/xresources.json",
 				"_watch": true
 			},
 			{
-				"label": "Wal Bordered",
+				"label": "Xresources Bordered",
 				"uiTheme": "vs-dark",
-				"path": "./themes/wal-bordered.json",
+				"path": "./themes/xresources-bordered.json",
 				"_watch": true
 			}
 		]
