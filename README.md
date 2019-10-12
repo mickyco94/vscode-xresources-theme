@@ -1,24 +1,20 @@
-# Disclaimer
+# Xresources Theme
 
-I really am just doing this for personal use, but may eventually try and form something coherent out of it. Below is the original README
+This extensions for Visual Studio Code adds a **real time updated theme** that is dynamically generated from the color palette in your existing Xresources file.
 
-# Wal Theme
-
-This extensions for Visual Studio Code adds a **real time updated theme** that is dynamically generated from the color palette provided by [pywal](https://github.com/dylanaraps/pywal).
-
-## Screenshots
+<!-- ## Screenshots
 
 ![Example 1](https://raw.githubusercontent.com/dlasagno/vscode-wal-theme/master/screenshots/1.png)
 
 ![Example 2](https://raw.githubusercontent.com/dlasagno/vscode-wal-theme/master/screenshots/2.png)
 
-![Example 3](https://raw.githubusercontent.com/dlasagno/vscode-wal-theme/master/screenshots/3.png)
+![Example 3](https://raw.githubusercontent.com/dlasagno/vscode-wal-theme/master/screenshots/3.png) -->
 
 ## Features
 
 - Real time updates of the color scheme
 - Two variants available: borderless and bordered
-- Works out of the box: no setup needed
+- Works out of the box: just set xresourcesPath at first startup
 
 ## Requirements
 
@@ -32,9 +28,10 @@ This extension contributes the following command:
 
 ## Extension Settings
 
-This extension contributes the following setting:
+This extension contributes the following settings:
 
 - `xresourcesTheme.autoUpdate`: enable/disable the auto update of the theme provided by this extension
+- `xresourcesTheme.xresourcesPath`: path to the Xresources file
 
 ## Troubleshooting
 
@@ -45,4 +42,4 @@ If the manual update doesn't work try reloading the window.
 
 ## Credits
 
-This extension is inspired by [Ayu](https://github.com/ayu-theme/vscode-ayu) and [vscode-wal](https://github.com/bluedrack/vscode-wal).
+This extension is forked from [vscode-wal-theme](https://github.com/dlasagno/vscode-wal-theme), which was inspired by [Ayu](https://github.com/ayu-theme/vscode-ayu) and [vscode-wal](https://github.com/bluedrack/vscode-wal).

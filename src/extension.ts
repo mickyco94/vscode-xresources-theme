@@ -20,9 +20,21 @@ function expandPath() {
 	}
 }
 
-export function activate(context: vscode.ExtensionContext) {
+function askForXresources(): Thenable<void> {
+	return vscode.window.showInputBox({prompt: "Path to .Xresources file", placeHolder: ".Xresources"}).then(x => {
+		if (x !== undefined) {
+			xresourcesColorsPath = x;
+			vscode.workspace.getConfiguration().update("xresourcesTheme.xresourcesPath", x);
+		}
+	});
+}
+
+export async function activate(context: vscode.ExtensionContext) {
 
 	xresourcesColorsPath = vscode.workspace.getConfiguration().get("xresourcesTheme.xresourcesPath");
+	if (xresourcesColorsPath === undefined || xresourcesColorsPath === "") {
+		await askForXresources();
+	}
 	expandPath();
 	generateColorThemes();
 
