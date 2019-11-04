@@ -96,13 +96,23 @@ function generateColorThemes() {
 	// Import colors from xrdb
 	let colors: Color[] = new Array(16);
 	try {
+		let resources: string = execSync("xrdb -n " + xresourcesColorsPath).toString();
 		for (let i = 0; i < colors.length; i++) {
-			let resources: string = execSync("xrdb -n " + xresourcesColorsPath + " | grep 'color" + i.toString() + ":'").toString();
-			let matches = resources.match(/#[a-f\d]{6}/gi);
+			let colorrx: RegExp = new RegExp(`^.*color${i}.*$`, 'gim'); // pull full lines for given color
+			let matches = resources.match(colorrx);
 			if (matches !== null) {
-				colors[i] = Color(matches[0]);
+				let matchesString = matches.join('\n');
+				matches = matchesString.match(/code\..*#[a-f\d]{6}/gim); // find code.color statements if exists
+				if (matches !== null) {matchesString = matches[0];}
+				matches = matchesString.match(/#[a-f\d]{6}/gi); // pull out just color string
+				if (matches !== null) {
+					colors[i] = Color(matches[0]);
+				} else {
+					throw Error('No color available for color' + i.toString());
+				}
 			} else {
-				throw Error;
+				console.log('colorrx failed');
+				throw Error('No color available for color' + i.toString());
 			}
 		}
 	} catch(error) {

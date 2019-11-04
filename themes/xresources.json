@@ -6,10 +6,10 @@
         "widget.shadow": "#1D1C1B",
         "selection.background": "#C9C8C877",
         "textBlockQuote.background": "#2F2C2B",
-        "textLink.foreground": "#F4FCAD",
-        "textLink.activeForeground": "#F4FCAD",
+        "textLink.foreground": "#F4ADFC",
+        "textLink.activeForeground": "#F4ADFC",
         "textPreformat.foreground": "#C9C8C8",
-        "button.background": "#F4FCAD",
+        "button.background": "#F4ADFC",
         "button.foreground": "#272524",
         "dropdown.background": "#2F2C2B",
         "dropdown.foreground": "#C9C8C899",
@@ -18,7 +18,7 @@
         "input.border": "#5D5B5A55",
         "input.foreground": "#C9C8C8",
         "input.placeholderForeground": "#5D5B5A77",
-        "inputOption.activeBorder": "#F4FCAD",
+        "inputOption.activeBorder": "#F4ADFC",
         "inputValidation.errorBackground": "#272524",
         "inputValidation.errorBorder": "#7996AA",
         "inputValidation.infoBackground": "#272524",
@@ -29,14 +29,14 @@
         "scrollbarSlider.background": "#C9C8C844",
         "scrollbarSlider.hoverBackground": "#C9C8C877",
         "scrollbarSlider.activeBackground": "#C9C8C892",
-        "badge.background": "#F4FCAD",
+        "badge.background": "#F4ADFC",
         "badge.foreground": "#272524",
-        "progressBar.background": "#F4FCAD",
+        "progressBar.background": "#F4ADFC",
         "list.activeSelectionBackground": "#5D5B5A33",
         "list.activeSelectionForeground": "#C9C8C8",
         "list.focusBackground": "#5D5B5A33",
         "list.focusForeground": "#C9C8C899",
-        "list.highlightForeground": "#F4FCAD",
+        "list.highlightForeground": "#F4ADFC",
         "list.hoverBackground": "#5D5B5A33",
         "list.hoverForeground": "#C9C8C899",
         "list.inactiveSelectionBackground": "#5D5B5A33",
@@ -45,7 +45,7 @@
         "activityBar.background": "#272524",
         "activityBar.foreground": "#5D5B5A",
         "activityBar.border": "#272524",
-        "activityBarBadge.background": "#F4FCAD",
+        "activityBarBadge.background": "#F4ADFC",
         "activityBarBadge.foreground": "#272524",
         "sideBar.background": "#272524",
         "sideBar.border": "#272524",
@@ -59,7 +59,7 @@
         "tab.activeBackground": "#272524",
         "tab.activeForeground": "#C9C8C8",
         "tab.border": "#272524",
-        "tab.activeBorder": "#F4FCAD",
+        "tab.activeBorder": "#F4ADFC",
         "tab.unfocusedActiveBorder": "#C9C8C899",
         "tab.inactiveBackground": "#272524",
         "tab.inactiveForeground": "#C9C8C899",
@@ -69,21 +69,21 @@
         "editor.foreground": "#C9C8C8",
         "editorLineNumber.foreground": "#5D5B5A92",
         "editorLineNumber.activeForeground": "#5D5B5A",
-        "editorCursor.foreground": "#F4FCAD",
+        "editorCursor.foreground": "#F4ADFC",
         "editor.selectionBackground": "#5D5B5A77",
         "editor.inactiveSelectionBackground": "#5D5B5A44",
         "editor.selectionHighlightBackground": "#5D5B5A44",
         "editor.selectionHighlightBorder": "#5D5B5A",
         "editor.wordHighlightBackground": "#5D5B5A44",
         "editor.wordHighlightStrongBackground": "#185D8E77",
-        "editor.findMatchBackground": "#F4FCAD0e",
-        "editor.findMatchBorder": "#F4FCAD",
-        "editor.findMatchHighlightBackground": "#F4FCAD0e",
-        "editor.findMatchHighlightBorder": "#F4FCAD66",
+        "editor.findMatchBackground": "#F4ADFC0e",
+        "editor.findMatchBorder": "#F4ADFC",
+        "editor.findMatchHighlightBackground": "#F4ADFC0e",
+        "editor.findMatchHighlightBorder": "#F4ADFC66",
         "editor.findRangeHighlightBackground": "#5D5B5A44",
         "editor.findRangeHighlightBorder": "#27252400",
         "editor.lineHighlightBackground": "#C9C8C822",
-        "editorLink.activeForeground": "#F4FCAD",
+        "editorLink.activeForeground": "#F4ADFC",
         "editor.rangeHighlightBackground": "#5D5B5A33",
         "editorWhitespace.foreground": "#5D5B5A66",
         "editorIndentGuide.background": "#5D5B5A44",
@@ -97,9 +97,9 @@
         "editorOverviewRuler.addedForeground": "#185D8Ebb",
         "editorOverviewRuler.deletedForeground": "#7996AAbb",
         "editorOverviewRuler.errorForeground": "#7996AA",
-        "editorOverviewRuler.warningForeground": "#F4FCAD",
+        "editorOverviewRuler.warningForeground": "#F4ADFC",
         "editorError.foreground": "#7996AA",
-        "editorWarning.foreground": "#F4FCAD",
+        "editorWarning.foreground": "#F4ADFC",
         "editorGutter.modifiedBackground": "#7270A0bb",
         "editorGutter.addedBackground": "#185D8Ebb",
         "editorGutter.deletedBackground": "#7996AAbb",
@@ -108,7 +108,7 @@
         "editorWidget.background": "#2F2C2B",
         "editorSuggestWidget.background": "#2F2C2B",
         "editorSuggestWidget.border": "#5D5B5A22",
-        "editorSuggestWidget.highlightForeground": "#F4FCAD",
+        "editorSuggestWidget.highlightForeground": "#F4ADFC",
         "editorSuggestWidget.selectedBackground": "#5D5B5A33",
         "editorHoverWidget.background": "#2F2C2B",
         "editorHoverWidget.border": "#5D5B5A22",
@@ -117,16 +117,16 @@
         "editorMarkerNavigation.background": "#2F2C2B",
         "peekView.border": "#5D5B5A33",
         "peekViewEditor.background": "#2F2C2B",
-        "peekViewEditor.matchHighlightBackground": "#F4FCAD44",
+        "peekViewEditor.matchHighlightBackground": "#F4ADFC44",
         "peekViewResult.background": "#2F2C2B",
         "peekViewResult.fileForeground": "#C9C8C899",
-        "peekViewResult.matchHighlightBackground": "#F4FCAD44",
+        "peekViewResult.matchHighlightBackground": "#F4ADFC44",
         "peekViewTitle.background": "#2F2C2B",
         "peekViewTitleDescription.foreground": "#C9C8C899",
         "peekViewTitleLabel.foreground": "#C9C8C899",
         "panel.background": "#272524",
         "panel.border": "#5D5B5A33",
-        "panelTitle.activeBorder": "#F4FCAD",
+        "panelTitle.activeBorder": "#F4ADFC",
         "panelTitle.activeForeground": "#C9C8C8",
         "panelTitle.inactiveForeground": "#C9C8C899",
         "statusBar.background": "#272524",
@@ -145,8 +145,8 @@
         "titleBar.inactiveForeground": "#C9C8C8",
         "titleBar.border": "#272524",
         "extensionButton.prominentForeground": "#272524",
-        "extensionButton.prominentBackground": "#F4FCAD",
-        "extensionButton.prominentHoverBackground": "#F4FCADb3",
+        "extensionButton.prominentBackground": "#F4ADFC",
+        "extensionButton.prominentHoverBackground": "#F4ADFCb3",
         "pickerGroup.border": "#5D5B5A33",
         "pickerGroup.foreground": "#C9C8C8b3",
         "debugToolBar.background": "#272524",
@@ -161,7 +161,7 @@
         "terminal.background": "#272524",
         "terminal.foreground": "#C9C8C8",
         "terminal.ansiBlack": "#272524",
-        "terminal.ansiRed": "#F4FCAD",
+        "terminal.ansiRed": "#F4ADFC",
         "terminal.ansiGreen": "#185D8E",
         "terminal.ansiYellow": "#7270A0",
         "terminal.ansiBlue": "#7996AA",
@@ -221,7 +221,7 @@
                 "constant.numeric"
             ],
             "settings": {
-                "foreground": "#F4FCAD"
+                "foreground": "#F4ADFC"
             }
         },
         {
@@ -230,7 +230,7 @@
                 "constant.language"
             ],
             "settings": {
-                "foreground": "#F4FCAD"
+                "foreground": "#F4ADFC"
             }
         },
         {
@@ -248,7 +248,7 @@
                 "variable.member"
             ],
             "settings": {
-                "foreground": "#F4FCAD"
+                "foreground": "#F4ADFC"
             }
         },
         {
@@ -392,7 +392,7 @@
                 "support.macro"
             ],
             "settings": {
-                "foreground": "#F4FCAD"
+                "foreground": "#F4ADFC"
             }
         },
         {
@@ -603,7 +603,7 @@
             ],
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#F4FCAD"
+                "foreground": "#F4ADFC"
             }
         },
         {
@@ -613,7 +613,7 @@
             ],
             "settings": {
                 "fontStyle": "bold",
-                "foreground": "#F4FCAD"
+                "foreground": "#F4ADFC"
             }
         },
         {
